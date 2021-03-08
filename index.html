@@ -1,0 +1,306 @@
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cookie|Monda|Mrs+Saint+Delafield|Sail|Seaweed+Script&display=swap" rel="stylesheet">
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  background-image: url("https://st4.depositphotos.com/1030463/29638/v/600/depositphotos_296388270-stock-video-virus-cells-moving-white-background.jpg");
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+nav{
+  background: linear-gradient(35deg, #0082e6, #90EE90, #2E8B57); 
+  height: 150px;
+  width: 100%;
+  border-bottom: 4px solid #4C9CF1;
+  text-align: center;
+}
+
+.logo{
+  margin-top: 15px;
+  height: 70px;
+  width: auto;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+nav ul{
+  text-align: center;
+  
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 2px;
+  
+}
+nav ul li a{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0px 25px;
+  border-radius: 3px;
+  /* text-transform: uppercase; */
+  font-family: 'Abel', sans-serif;
+}
+a.active,a:hover{
+  border-bottom: 3px solid white;
+  color: black;
+  transition: 0.8s;
+  font-size: 22px;
+  cursor: pointer;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+#img-sec{
+	   background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/coronavirus-disinfection-royalty-free-image-1587312983.jpg");
+	   background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+	   display: grid; 
+	   max-width: 100%;
+       height: 700px; 
+       margin: 0%;    
+}
+@media (max-width: 1150px){
+  label.logo{
+    font-size: 24px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+ 
+}
+@media (max-width: 870px){
+  .checkbtn{
+    display: block;
+    margin-top: 20px;
+    margin-right: 40px;
+    
+  }
+  .logo{
+	height: 45px;
+	width: auto;
+	padding-left: 50px;
+	}
+ 
+  #meul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 5;
+  }
+  nav{
+  	height: 80px;
+  }
+  nav #meul .lime{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+     
+  }
+  nav #meul .lime a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+    
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  
+}
+
+//form 
+body {
+    	font-family: 'Cookie', cursive;
+		font-family: 'Mrs Saint Delafield', cursive;
+		font-family: 'Sail', cursive;
+		font-family: 'Seaweed Script', cursive;
+		font-family: 'Monda', sans-serif;
+		
+    }
+    
+    .info{
+    color: white;
+    }
+    
+    .bel {
+     color: #0082e6;
+    }
+	
+	.inp {
+	    width: 100%;
+	    height: auto;
+	    font-size: 18px;
+	    border-radius: 4%;
+	    font-family: 'Abel', sans-serif;
+	   
+	}
+	
+	#contact {
+		background: linear-gradient(35deg, black, red); 
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-top: 3%;
+		padding-bottom: 1%;
+		width: 40%;
+		opacity: 0.8;
+		margin-left: 30%;
+		margin-top: 5%;
+			}
+	.main{
+		text-align: left;
+		font-size: 18px;
+		background: #332F2C;
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		width: 40%;
+		height: 96%;
+		margin-left: 30%;
+		display: block;
+		cursor: pointer;
+		opacity: 0.95;
+	    font-family: 'Abel', sans-serif;
+	   }
+    p {
+     color: white;
+     font-family: 'Abel', sans-serif;
+     padding-top: 10%;
+     font-size: 23px;
+     text-align: center;
+    }
+    h1{
+     color: white;
+     font-family: 'Abel', sans-serif;
+     font-size: 27px;
+     text-align: center;
+    }
+	
+	#comment {
+		height: 15%;
+		width: 100%;
+		font-size: 18px;
+	}
+	#submit {
+		font-weight: bold;
+		height: 40px;
+	    font-size: 20px;
+	    align-items: center;
+	    justify-content: center;
+	    
+	}
+	#submit:hover{
+	    color: #0082e6;
+	    background: white;
+	    font-size: 25px;
+	    font-weight: bold;
+	}
+	
+@media (max-width: 1000px){
+ #contact{
+   width: 80%;
+   margin-left: 10%;
+   margin-right: 10%;
+  }
+  .main{
+   width: 80%;
+   margin-left: 10%;
+   margin-right: 10%;
+  }
+}
+	
+  footer{
+  background: linear-gradient(35deg, #0082e6, #90EE90, #2E8B57); 
+  height: 80px;
+  width: 100%;
+  margin-bottom: -20px;
+  border-top: 4px solid #4C9CF1;
+  text-align: center;
+  }
+  #rights {
+  font-family: 'Abel', sans-serif;
+	font-size: 20px;
+	padding-top: 20px;
+	color: black;
+  }
+</style>
+
+<!DOCTYPE html>
+<!-- Created By Marielle Romano -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="BBEdit 13.0"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <img class="logo" src="https://lh3.googleusercontent.com/bMQOdCR9QL3NdUlSAB6nN0fP7hcdM3ZymYFannU2P6M3o7kP2Y4E8ZX9lrmqCr3z6IH1_8S1DKMQcftHdma2KQ_waxvvnGeytc3bRdr6jU5bb0CjGloZbw-fcDxbd24mAHNAfT-RsY7hCr59-S_CatKD5wCefuYQX3y8lUHyBQ-DXDhRP1Sq19OFBu0YYv6SakycJZkr2amcn9l1Dz6sMYrtPaVSXn6VhEhHiKvcMVcI19-uO-6t5Y0reqnWZDL9Q2NeTKCE61hEzeaF1w3cLR9oejvzzFMZ15lN0eYGxoBEbmxXM-_q3pLq27yHX__89VOhWAMy9HlHCLq0PB-XpJJHeHzWV5bfUvuKKWvvuaqg1S7tuxfYppjcrVvwClBgKjRhYSHlh1nIWry7DKb8dZMy12ZErhUS6UnrGRCcXJc9Gb-x4xDZwd-rMzJl2-c-bojtskiBUR1zXlSjGAVoruzKnsC64aFX-SvtqlrQJk4vDNcqWO0jgbto5sDMaonBvTdKnIrwMsLX-7tz1wy9e9a3LT-KBqNTfEky0zXecXT25bK7boRF91dvcNweK7GbRtoSxzpYFQMJDdwMva_IxxVu8KxkhrZLW_dYX7jA6DqH8GMUx8AJ-xFleAmac7HqFEkkmw-9B-rKVoTVnCPFCtoTS6p9a_TCKjyAJKBMlaLYqZAjRWZDHBVP80uA=w509-h112-no?authuser=0">
+      <ul id="meul">
+<li class="lime"><a class="active" href="file:///Users/marielle/Documents/Home.html#file:///Users/marielle/Documents/Home.html">HOME</a></li>
+<li class="lime"><a href="file:///Users/marielle/Documents/Home.html#file:///Users/marielle/Documents/Home.html#services">SERVICES</a></li>
+<li class="lime"><a href="#">CONTACT</a></li>
+</ul>
+</nav>
+    <section id="img-sec">
+    <div id="contact">
+    	<p>CONTACT US, CALL NOW! to</p>
+    	<h1><i class="fa fa-phone" aria-hidden="false"></i> 978-254-3743</h1>
+    </div>
+     <div class="main">
+		<div class="info">REQUEST AN APPOIMENT!</div><br>
+		<form action="form-to-email.php" method="post" name="form" class="form-box">
+			<label for="name" class="bel">Name</label><br>
+			<input type="text" name="name" class="inp" placeholder="Enter Your Name" required><br><br>
+			<label for="email" class="bel">Email</label><br>
+			<input type="email" name="email" class="inp" placeholder="Enter Your Email" required><br><br>
+			<label for="phone" class="bel">Phone</label><br>
+			<input type="tel" name="phone" class="inp" placeholder="Enter Your Phone" required><br><br>
+			<label for="message" class="bel">Message</label><br>
+			<textarea name="msg" class="inp" id="comment" placeholder="Enter Your Message Here..." required></textarea><br><br>
+			<input type="submit" name="submit" value="Submit" class="inp" id="submit">
+		</form>
+	</div>
+    
+    </section>
+   
+    <footer>
+    <p id="rights">Copyright 2020 © Romano Disinfection Service - All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

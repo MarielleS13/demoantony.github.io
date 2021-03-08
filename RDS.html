@@ -1,0 +1,248 @@
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cookie|Monda|Mrs+Saint+Delafield|Sail|Seaweed+Script&display=swap" rel="stylesheet">
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  background-image: url("https://st4.depositphotos.com/1030463/29638/v/600/depositphotos_296388270-stock-video-virus-cells-moving-white-background.jpg");
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+nav{
+  background: linear-gradient(35deg, #0082e6, #90EE90, #2E8B57); 
+  height: 160px;
+  width: 100%;
+  border-bottom: 4px solid #4C9CF1;
+  text-align: center;
+}
+label.logo{
+  color: #f2f2f2;
+  font-size: 33px;
+  text-align: center;
+  line-height: 80px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+nav ul{
+  text-align: center;
+  
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 2px;
+  
+}
+nav ul li a{
+  color: #f2f2f2;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  /* text-transform: uppercase; */
+  font-family: 'Poppins', sans-serif;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+#img-sec{
+	   alignment-adjust: center;
+	   background-image: url("https://media0.giphy.com/media/Nq86uvKlOnsjK/source.gif");
+	   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+	   display: flex; 
+	   max-width: 100%;
+       height: 600px; 
+       margin: 0%; 
+       
+}
+@media (max-width: 1150px){
+  label.logo{
+    font-size: 24px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+ 
+}
+@media (max-width: 870px){
+  .checkbtn{
+    display: block;
+    margin-top: 20px;
+    margin-right: 40px;
+    
+  }
+ 
+  #meul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 5;
+  }
+  nav{
+  	height: 80px;
+  }
+  nav #meul .lime{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+     
+  }
+  nav #meul .lime a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  
+}
+
+//form 
+body {
+    	font-family: 'Cookie', cursive;
+		font-family: 'Mrs Saint Delafield', cursive;
+		font-family: 'Sail', cursive;
+		font-family: 'Seaweed Script', cursive;
+		font-family: 'Monda', sans-serif;
+		
+    }
+  
+	
+	.info {
+	    width: 100%;
+	    height: auto;
+	    font-size: 18px;
+	    border-radius: 4%;
+	    font-family: 'Poppins', sans-serif;
+	   
+	}
+	#survey-form {
+		text-align: left;
+		font-size: 18px;
+		background: rgba(76, 175, 80, 0.8);
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-top: 5%;
+		padding-bottom: 5%;
+		width: 60%;
+		height: 80%;
+		margin: auto;
+		margin-bottom: 10%;
+		border-radius: 0.25rem;
+		display: block;
+		cursor: pointer;
+		font-family: 'Poppins', sans-serif;
+}
+
+	}
+	
+	#comment {
+		height: 20%;
+	}
+	#submit {
+		font-weight: bold;
+	}
+	#submit:hover{
+	    color:lime;
+	    background: white;
+	    font-weight: bold;
+	}
+
+
+  footer{
+  background: linear-gradient(35deg, #0082e6, #90EE90, #2E8B57); 
+  height: 80px;
+  width: 100%;
+  border-top: 4px solid #4C9CF1;
+  text-align: center;
+  }
+  #rights {
+  font-family: 'Abel', sans-serif;
+	font-size: 20px;
+	padding-top: 20px;
+	color: black;
+  }
+</style>
+
+<?php
+if (isset($_GET['my_submit_button'])) {
+    $body = "Email: $_GET[email]<br />\n";
+    $body .="Phone: $_GET[phone]<br />\n";
+    $body .="Message: $_GET[comment]<br />\n";
+    
+    mail('marielle.romano@gmail.com', "Your Subject", $body);
+} 
+?>
+
+<!DOCTYPE html>
+<!-- Created By Marielle Romano -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Navbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="BBEdit 13.0"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Romano Disinfection Service</label> <br>
+      <ul id="meul">
+<li class="lime"><a class="active" href="#">HOME</a></li>
+<li class="lime"><a href="#services">SERVICES</a></li>
+<li class="lime"><a href="#">CONTACT</a></li>
+</ul>
+</nav>
+    <section id="img-sec">
+     <form id="survey-form" method="POST" action="" name="mailform" enctype="text/plain">
+    <label>Request an Appoiment<label><br><br>
+	<input id="name" class="info" type="text" name="name" placeholder="Enter your name" required></input><br><br>
+	<input id="email" class="info" type="email" name="email" placeholder="Enter your email" required></input><br><br>
+	<input id="number" class="info" type="tel"  name="phone" placeholder="Telephone number"></input><br><br>
+    <textarea class="info" id="comment" name="comment" placeholder="How can we help you?"></textarea><br><br>
+	   <input id="submit" class="info" type="submit" name="my_submit_button">
+</form>
+    
+    </section>
+   
+    <footer>
+    <p id="rights">Copyright 2020 © Romano Disinfection Service - All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

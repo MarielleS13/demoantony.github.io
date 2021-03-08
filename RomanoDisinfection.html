@@ -1,0 +1,374 @@
+<link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Exo|Mukta&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Akronim&family=Ma+Shan+Zheng&family=Merienda+One&family=Open+Sans&display=swap" rel="stylesheet">
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+nav{
+  height: 15%;
+  background: linear-gradient(35deg, #90EE90, #2E8B57);
+  width: 100%;
+}
+.logo {
+  color: white;
+  font-size: 33px;
+  line-height: 80px;
+  padding: 0 140px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+nav ul{
+  float: right;
+  margin-right: 60px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 2px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  /* text-transform: uppercase; */
+  font-family: 'Poppins', sans-serif;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 27px;
+    padding-left: 25px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+    margin-right: 40px;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+
+///////
+	header {
+	 	position: fixed;
+	 	width: 100%; 
+	 	top: 0;
+	 	left: 0;
+	 	right: 0;
+	 }
+	 #header {
+	 min-height: 80px;
+	 align-items: center;
+	 justify-content: space-around;
+	 height: 15%;
+	 	background: linear-gradient(35deg, #90EE90, #2E8B57);
+	 	display: flex;
+	 }
+	 #header-img{
+	  height: 100%;
+	  width: 10%;
+	 
+	 }
+	 #nav-bar {
+	 	justify-content: flex-end;
+       text-decoration: none;	
+       display: flex;
+}
+	  
+#nav-list{
+	 	display: flex;
+	 	padding-right: 20%;
+	 	text-align: center;
+	 	width: 100%;
+	 	justify-content: space-around;
+	 	font-size: 17px;
+	 	font-family: 'Permanent Marker', cursive;
+	 	color: black;
+	 	list-style: none;
+  text-decoration: none;
+}
+
+}
+.menu a {
+ clear: right;
+  margin: 0 10px;
+  line-height: 70px;
+}
+
+a {
+  font-size: 17px;
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+  font-weight: bold;
+  font-family: 'Exo', sans-serif;
+  text-decoration: none;
+}
+a:link{
+	text-decoration: none;
+}
+a:hover{
+    font-size: 25px;
+    color: white;
+}
+	 .nav-link:hover{
+	 	opacity: 0.7;
+	 	background-size: 100%;
+	 }
+	 
+	 .img-container {
+	 padding-top: 10%;
+	 padding-left: 4%;
+	
+	}
+	 #img1 {
+	 width: 96%;
+	 height: auto;
+	 }
+	 h1 {
+	 padding-left: 10%;
+	 font-family: 'Homemade Apple', cursive;
+	 font-size: 35px;
+	 }
+	 h2 {
+	  padding-left: 10%;
+	 font-family: 'Ma Shan Zheng', cursive;
+	 font-size: 35px;
+	 color: #191970;
+	 }
+	 hr{
+	 border-color: green;
+	 width: 75%;
+	 }
+	
+	p {
+     text-align: center;
+     padding: 5%;
+     font-size: 20px;
+	 	font-family: 'Patrick Hand', cursive;
+  }
+	 @media (max-height:700px){
+       p {font-size: 15px;}
+     }
+     #products {
+    height: 500px;
+    display: flex;
+    align-items: center;
+	justify-content: space-around;
+	position: static;
+	color: navy;
+  }
+  
+  .product-features {
+    display: grid;
+	  grid-template-columns: 1fr 1fr;
+	  grid-template-rows: 1fr 1fr 1fr;
+	  align-items: center;
+	 justify-content: space-around;
+  }
+  .img-features {
+    padding-left: 4%;
+  	width: 80%;
+  	height: auto;
+  	border-radius: 50%;
+  }
+  #box-1 {
+    width: 25%;
+    height: 80%;
+    border-radius: 10%;
+    border-style: inset;
+    background: linear-gradient(0deg, #9ACD32, #FFFF66, #FFFACD);
+    
+  }
+
+  #box-2 {
+    width: 25%;
+    height: 80%;
+    border-radius: 10%;
+    border-style: outset;
+    background: linear-gradient(0deg, brown, #FFFF66, #FFFACD);  
+  }
+  #box-3 {
+    width: 25%;
+    height: 80%;
+    border-radius: 10%;
+    border-style: outset;
+    background: linear-gradient(0deg, orange, #FFFF66, #FFFACD);
+  }
+  #box-1:hover, #box-2:hover, #box-3:hover {
+  	opacity: 0.8;
+  }
+  .img-box {
+    width: 70%;
+    height: auto;
+    padding: 15%;
+    padding-bottom: 0%;
+    
+  }
+  #video {
+  	width: 100%;
+  	height: auto;
+  }
+  #footer {
+	 min-height: 130px;
+	 align-items: center;
+	 justify-content: space-around;
+	 height: 10%;
+	 	background: linear-gradient(35deg, #90EE90, #2E8B57);
+	 	display: grid;
+	 }
+	 #form{
+	 margin-top: 20px;
+	 }
+	 #form, #email, #submit {
+	 font-family: 'Patrick Hand', cursive;
+	 font-size: 15px;
+	 border-radius: 5px; 
+	 }
+	 input[type=submit] {
+    padding:5px 5px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+    #submit:hover {
+    	background-color: white;
+    }
+    
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Romano Disinfection Service</title>
+	<meta name="generator" content="BBEdit 13.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <header id="header">
+      <label class="logo">Romano Disinfection Service</label>
+      <img id="header-img" src="https://fumigon.com/wp-content/uploads/2020/03/mono.png">
+      <ul>
+			<li><a class="active" href="#">HOME</a></li>
+			<li><a class="nav-link" href="#about-us">ABOUT</a></li>
+			<li><a class="nav-link" href="#contact-us">CONTACT</a></li>
+		</ul>
+		</header>
+		</nav>
+	<div class="img-container">
+		<img id="img1" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/coronavirus-disinfection-royalty-free-image-1587312983.jpg?crop=1xw:0.74912xh;center,top&resize=1200:*" class="slide-img">
+	</div>
+	<br>
+	<hr>
+	<br>
+	<h1>Products</h1>
+	<div id="products" class="products">
+		<div id="box-1">
+		   <img class="img-box" src="https://images-na.ssl-images-amazon.com/images/I/91AsGKMF-wL._SL1500_.jpg">
+		   <p class="products">Fructris Smoothing Treat 1 Minute Hair Mask + Avocado Extract</p>
+		</div>
+  		<div id="box-2">
+  			<img class="img-box" src="https://images-na.ssl-images-amazon.com/images/I/81otbEVwU2L._SL1500_.jpg">
+  			<p class="products">Fructis Nourishing Treat 1 Minute Hair Mask + Coconut Extract</p>
+  		</div>
+  		<div id="box-3">
+  		  <img class="img-box" src="https://images-na.ssl-images-amazon.com/images/I/91jO0r5KtgL._SL1500_.jpg">
+  		  <p class="products">Fructis Damage Repairing Treat 1 Minute Hair Mask + Papaya Extract</p>
+  		</div>
+	</div>
+	<br>
+	<hr>
+	<br>
+	<h1>Product Features</h1>
+	<br>
+	<div class="product-features" id="product-features">
+	    <img class="img-features" src="https://www.garnier.es/-/media/project/loreal/brand-sites/garnier/emea/es/es-es/fructis/new-hair-food/hairfood_cb3-2.jpg?w=950&hash=722EE3CE38073B29703A6BC9CAE493C670E25BD5">
+		<p>Products 98% natural with a vegan formula and super fruits.</p>
+		<p>Treats 3-in-1 Hair Mask
+Treats 3-in-1 Hair Masks give you soft, shiny hair in just 1 minute. Made with vegan formulas with no animal-derived ingredients, treat yourself to the mask that is right for you. 3 ways to enjoy it:
+Mask, Conditioner and Leave-in</p>
+		<img class="img-features" src="https://www.garnierusa.com/-/media/project/loreal/brand-sites/garnier/usa/us/products/fructis/treats/ingredients-banners/fructis_treats_content-bloc_3-in-1-v2.jpg?w=950&hash=726D53B9E83ED5D932D1D2388E29BA5742C82BB9">
+		<img class="img-features" src="https://www.garnierusa.com/-/media/project/loreal/brand-sites/garnier/usa/us/products/fructis/treats/ingredients-banners/fructis_treats_content-bloc_ingredient-decoder-v2.jpg?w=950&hash=C59C62EEA231C5A983F7A16177E65D257D2B1A34">
+		<p>Naturally-Derived Ingredients
+
+Fructis Treats are made with 98% naturally derived ingredients. Check out the Ingredient Decoder found on the back of the bottle and discover what makes up our Fructis Treats formulas.</p>
+	    
+	</div>
+	<br>
+	<hr>
+	<br>
+	<h1> Hair Mask 1 min</h1>
+	<div>
+	<video id="video" controls>
+  		<source src="https://d2y5sgsy8bbmb8.cloudfront.net/8ec74787-ff49-49e4-b755-617602b0ea42/default.jobtemplate.hls.m3u8" type="video/mp4">
+	</video>
+	</div>
+	<footer id="footer">
+	<form id="form" action="https://www.freecodecamp.com/email-submit">
+	    <label>SIGN UP FOR OUR NEWSLETTER</label><br>
+		<input id="email" type="email" name="email" placeholder="Email Address" required></input>
+		<input id="submit"  type="submit">
+		<h5>© 2020 Romano. All rights reserved.<h5>
+	</form>
+	</footer>
+</body>
+</html>

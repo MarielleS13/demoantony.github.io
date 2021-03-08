@@ -1,0 +1,146 @@
+<link href="https://fonts.googleapis.com/css?family=Cookie|Monda|Mrs+Saint+Delafield|Sail|Seaweed+Script&display=swap" rel="stylesheet">
+<style>
+   body {
+    	font-family: 'Cookie', cursive;
+		font-family: 'Mrs Saint Delafield', cursive;
+		font-family: 'Sail', cursive;
+		font-family: 'Seaweed Script', cursive;
+		font-family: 'Monda', sans-serif;
+		
+    }
+    body::before {
+  content: " ";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: url("https://www.estrategiaynegocios.net/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=g0SUBBi55OEN32SwZaxcTs$daE2N3K4ZzOUsqbU5sYs$ZeycGPV51t1PPR0gfaPNWCsjLu883Ygn4B49Lvm9bPe2QeMKQdVeZmXF$9l$4uCZ8QDXhaHEp3rvzXRJFdy0KqPHLoMevcTLo3h8xh70Y6N_U_CryOsw6FTOdKL_jpQ-&CONTENTTYPE=image/jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+	.header {
+		text-align: center;
+	}
+	#title {
+		color: white;
+		font-weight: bold;
+	}
+	#description {
+		color: white;
+		font-size: 20px;
+		font-style: italic;
+	}
+	.info {
+	    width: 100%;
+	    height: auto;
+	    font-size: 18px;
+	    border-radius: 4%;
+	    font-family: 'Cookie', cursive;
+		font-family: 'Mrs Saint Delafield', cursive;
+		font-family: 'Sail', cursive;
+		font-family: 'Seaweed Script', cursive;
+		font-family: 'Monda', sans-serif;
+	}
+	#survey-form {
+		text-align: left;
+		font-size: 18px;
+		background: rgba(76, 175, 80, 0.8);
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-top: 5%;
+		padding-bottom: 5%;
+		width: 40%;
+		height: auto;
+		margin: auto;
+		margin-bottom: 10%;
+		border-radius: 0.25rem;
+		display: block;
+		cursor: pointer;
+}
+
+	}
+	span {
+		font-size: 15px;
+	}
+	#comment {
+		height: 20%;
+	}
+	#submit {
+		font-weight: bold;
+	}
+	#submit:hover{
+	    color:lime;
+	    background: white;
+	    font-weight: bold;
+	}
+	
+	</style>
+
+<!DOCTYPE html>
+<html>
+<head class="header">
+	<h1 id="title" class="header">Device Use Survey Form</h1>
+	<p id="description" class="header">Thank you for taking the time to fill this survey.</p>
+	<meta name="generator" content="BBEdit 13.0" />
+</head>
+
+<form id="survey-form">
+	<label id="name-label">Name:</label><br>
+	<input id="name" class="info" type="text" placeholder="Enter your name" required></input><br><br>
+	<label id="email-label">Email:</label><br>
+	<input id="email" class="info" type="email" placeholder="Enter your email" required></input><br><br>
+	<label id="number-label">Age <span>(Opcional) </span>:</label><br>
+	<input id="number" class="info" type="number" placeholder="Age" value="Age" min="0" max="99"></input><br><br>
+	<label class="selection">Which is your Mobile Operating System?</label><br>
+	<select class="info" id="dropdown" name="dropdown" required>
+		<option disabled selected value>select here</option>
+		<option value="ios">IOS</option>
+		<option value="android">Android</option>
+		<option value="windows">Windows</option>
+		<option value="blackberry">BlackBerry</option>
+		<option value="other">Other</option>
+	</select><br><br>
+	<label class="selection">Would you change of Mobile Operating System? <span>(Opcional) </span></label><br>
+	<div name="decision">
+       <input type="radio" id="yes" name="decision" value="yes">
+       <label for="yes">Yes</label><br>
+       <input type="radio" id="maybe" name="decision" value="maybe">
+       <label for="maybe">Maybe</label><br>
+       <input type="radio" id="no-way" name="decision" value="no-way">
+       <label for="no-way">No Way!</label>
+	</div><br>
+	<label class="selection">Which Mobile Operating System would you rather use?</label><br>
+	<select id="dropdown" class="info" name="dropdown" required>
+		<option disabled selected value>select here</option>
+		<option value="ios">IOS</option>
+		<option value="android">Android</option>
+		<option value="windows">Windows</option>
+		<option value="blackberry">BlackBerry</option>
+		<option value="other">Other</option>
+	</select><br><br>
+	<label class="selection">Which of the following Mobile devices do you own? <span>(Check all that apply) </span></label><br>
+	<div name="devices" class="info">
+       <input type="checkbox" id="phone" name="device" value="phone">
+       <label for="phone">SmartPhone</label><br>
+       <input type="checkbox" id="laptop" name="device" value="laptop">
+       <label for="laptop">Laptop Computer</label><br>
+       <input type="checkbox" id="tablet" name="device" value="tablet">
+       <label for="tablet">Tablet</label><br>
+       <input type="checkbox" id="watch" name="device" value="watch">
+       <label for="watch">SmartWatch</label><br>
+       <input type="checkbox" id="ipod" name="device" value="ipod">
+       <label for="ipod">Ipod Touch</label><br>
+       <input type="checkbox" id="console" name="device" value="console">
+       <label for="consolet">Handheld Gaming Console</label><br>
+       <input type="checkbox" id="e-reader" name="device" value="e-reader">
+       <label for="e-reader">E-reader</label>
+	</div><br>
+	<label class="selection">Which is your opinion, if any about the use of mobile devices?</label><br>
+<textarea class="info" id="comment" placeholder="Write your opinion here..."></textarea><br><br>
+	   <input id="submit" class="info" type="submit">
+</form>
+</html>

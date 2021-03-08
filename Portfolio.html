@@ -1,0 +1,307 @@
+
+<link href="https://fonts.googleapis.com/css?family=Exo|Mukta&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+<style>
+body{
+background-color: #2F4F4F;
+}
+/*Welcome Section*/
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background: linear-gradient(35deg, black, #C71585);
+  z-index: 10;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+  text-align: center;
+  width: 100%;
+  justify-content: space-around;
+  list-style-type: none;
+  text-decoration: none;	
+}
+a {
+  font-size: 17px;
+  font-family: 'Homemade Apple', cursive;
+  color: white;
+  font-weight: bold;
+  font-family: 'Exo', sans-serif;
+}
+a:link{
+	text-decoration: none;
+}
+a:hover{
+    font-size: 25px;
+    color: pink;
+}
+
+#welcome-section {
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQCJN8bXaYbv5O7KxcpV7yw1x7fv9zgE3H9CWMueCpklobZyCqc");
+	
+		background-size: cover;
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    opacity: 0.8;
+    position: absolute;
+    z-index: -1;
+    background-position: center;
+
+}
+
+h1 {
+     padding-top: 30%;
+     font-size: 50px;
+     text-align: center;
+     font-family: 'Permanent Marker', cursive;
+}
+p {
+     padding-top: 40%;
+     font-size: 25px;
+     text-align: center;
+     position: static;
+     font-family: 'Exo', sans-serif;
+     font-style: italic;
+}
+@media(max-height:600px) {
+p{
+font-size:0px;
+}
+}
+@media(max-width:900px){
+p{
+font-size:0px;
+}
+}
+
+.circle {
+	background: linear-gradient(35deg, black, #C71585);
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	animation-name: twinkle;
+	animation-duration: 2s;
+	animation-play-state: initial;
+	animation-iteration-count: 3;
+	position: relative;
+}
+@keyframes twinkle {
+	0% {
+	height: 120px;
+	width: 120px;
+	}
+	50% {
+	height: 140px;
+	width: 140px;
+	opacity: 0.8;
+	}
+	100% {
+	height: 120px;
+	width: 120px;
+	
+	}
+}
+ 
+.code-circle {
+display: flex;
+	text-decoration: none;
+	list-style-type: none;
+	position: center;
+	justify-content: space-around;
+	margin-top: 5%;
+}
+div { 
+position: static;}
+
+.img-circle {
+height: 50px;
+width: 50px;
+position: center;
+align: center;
+padding-top: 20%;
+	padding-left: 30%;
+}
+code {
+ color: white;
+ padding-left: 30%;
+}
+/*Project Section*/
+h2 {
+     padding-top: 10%;
+     margin-bottom: 0%;
+     font-size: 35px;
+     text-align: center;
+     font-family: 'Permanent Marker', cursive;
+     color: white;
+}
+hr{
+	 border-color: purple;
+	 width: 30%;
+	 }
+.projects-img {
+ height:300px;
+ width: 450px;
+ animation-name: grow;
+ animation-duration: 2s;
+ animation-delay: 4s;;
+}
+#first {
+display: flex;
+position: center;
+	justify-content: space-around;
+}
+#second {
+display: flex;
+position: center;
+	justify-content: space-around;
+}
+.project-tile {
+ background: black;
+ text-align: center;
+ padding-bottom: 10px;
+ border-radius: 2%;
+}
+.project-tile:hover{
+ opacity: 0.7;
+}
+
+@keyframes grow{
+0%{
+height: 0px;
+width: 0px;
+}
+100%
+{
+height: 300px;
+width: 450px;
+}
+}
+
+/*Contact Section*/
+
+   #footer {
+	 min-height: 800px;
+	 align-items: center;
+	 justify-content: space-around;
+	 height: 100%;
+	 	background: linear-gradient(45deg, #C71585, #191970, black);
+	 	display: grid;
+	 	 top: 0px;
+	 	 
+  left: 0px;
+  z-index: -1;
+  position: static;
+  }
+ 
+	 .profile-linked {
+	 display: flex;
+	 width: 100%;
+	 	text-align: center;
+	 	justify-content: space-around;
+	 	list-style-type: none;
+	 		text-decoration: none;	
+	 }
+	 
+	 .img-linked {
+	 height: 25px;
+	 width: 25px;
+	 }
+	 .img-linked:hover{
+	 height: 30px;
+	 width: 30px;
+	 }
+	 h3{
+	 color: pink;
+	 font-size: 25px;
+	 font-family: 'Exo', sans-serif;
+	 text-align: center;
+	 padding-top: 0;
+	 margin-top:0;
+	 font-style: italic;
+	 }
+	 #hr{
+	 width: 100%;
+	 border-width: 3px;
+	 }
+	 h4 {
+	 color:white;
+	 text-align: center;
+	 font-size: 17px;
+	 font-family: 'Exo', sans-serif;
+	 }
+</style>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<meta name="generator" content="BBEdit 13.0" />
+</head>
+<body>
+	<nav id="navbar" class="nav">
+  <ul class="nav-list">
+  	<li>
+      <a href="#welcome-section">WELCOME</a>
+    </li>
+    <li>
+      <a href="#projects">WORK</a>
+    </li>
+    <li>
+      <a href="#contact">CONTACT</a>
+    </li>
+  </ul>
+</nav>
+ 
+	<section id="welcome-section">
+		<h1 class="welcome"> Hi, I'm Marielle!</h1>
+	</section>
+	  <div>
+	<p>And my life is kind of coding.</p>
+	    <ul class="code-circle">
+	    <li><nav class="circle" ><img class="img-circle" src="https://cdn3.iconfinder.com/data/icons/food-drinks-color-1/128/eating-512.png"><br><code>eat();</code></nav></li>
+	    <li><nav class="circle"><img class="img-circle" src="https://cdn2.iconfinder.com/data/icons/real-estate-set-2/512/721303-16-512.png"><code>sleep();</code></nav></li>
+	    <li><nav class="circle"><img class="img-circle" src="https://i.ya-webdesign.com/images/code-icon-png-2.png"><code>code();</code></nav></li>
+	    <li><nav class="circle"><img class="img-circle" src="https://cdn3.iconfinder.com/data/icons/gray-toolbar-5/512/refresh-512.png"><code>repeat();</code></nav></li>
+    </ul>
+	    </div><br><br>
+	    <div>
+	    
+	<section id="projects">
+	
+	<h2>These are my projects</h2><hr><hr><br><br>
+	    <div id="first">
+		<nav class="project-tile"><a href="https://codepen.io/Mariel13/details/zYGJYWE"><img class="projects-img" src="https://lh3.googleusercontent.com/gdGiaOs_GMhYa0bZl3-y1uaBVo6hG-syST40NvHYq2uxl5jSI0VZxim-Nhp1MfNkb2aKH8wQA2K4OXc8KEvAB6TCviZbprFIGKL6nDMhpunj6LonEZdRpXFbd7HKGOg-jy1hLuRZddoa7WGNNWSSb74P-qzwZ1hL3N1bIXmw7dV7Kpp_ipsL-8bwqN1O4dzNScdtEMwjlA2ee64yH7rOGGJk2LdGliKpUu_Of5_cQkDIEmf290NJQAu8sJic0Q8hIyRhFrU7rJuKLT7D5uRrPwbBGnfvnHj4VEotLeQgfqbqtMR0bJiwI0VPnwRa0953-pDrDx2zwVAdi88_cqEeFCkCbAaRSlj1men_dS8cl4G717dBLMSGP5zbF_teU6DweGcFxflwd4q2bjcsNJ5tOjtkTzz2i6QoDu-7X8-M2HuwIjD2OomWuyK_gRduphsKZo4_sil97ZwClKitma7QwAgUTAOytaiyhNG1AxaArIsZv4iov7mw_RSpEY1dwbs-s_KJtNwqyt672Izsco2P_ru1r8vPe9GAgv_hJOCS3_k5n8txO68cRhyOZ5GukvRn7i6CIRoPRZQfbCDMMkI9PclErzoB_0CAsRplkyT_ajYlMVVTdVrofUuUHkbyXaSTHZx2603Hlm3gXojOJfvgiXNCpw6GHkophlpzPD6lNjgQTKqFdL9nMiCLEq_I3hZ0PhQ_Lxa0hbbAvGCKOLR4Ga2UA9OcUEkHidT15kABr37RqY4Yyx2zmw=w2096-h1516-no"><br><br>Alan Turing Tribute Page</a></nav> 
+		<nav class="project-tile"><a href="https://codepen.io/Mariel13/pen/KKpxeXr"><img class="projects-img" src="https://lh3.googleusercontent.com/CnJjjB842u7wfXc4Xn7iKobXmPN9bhF77qzDqQMEYmKek35WZvNBD7QJSJmjMAUQvzChfve_355aL7P5rPefYcw5M4dz2MW6nfkmNtwxLdzh3nyFkxxJks8E6Q8mfh39fTbIdQS8fk_Vrjur4p2nMU4k63ojlmUdFjJIpJUIHN-tSPNNip8ULfYHkgr-Gqdjn2I5u9XuW7P4jLfLSsRhGjgaOYb5wkfMMFVao6MyGd520QbE0y1YbKwpwgm1yqV3f2cInuCuT-_4JbHBK6kLi6hm7wfpdudg--Nb-XcpauZ-5GpvyKav37WWkSRnakCzUbHzjMcrc03x0VR-EYJr0pqJctZYOxeVWqYgb6JFgZdH8u7UTb3rvjwg4aYgQihxmAPK4zo-ll7u4au74532s6M0oNHN4fptkpDtoCOm5o6vLu_34cyAJwJ5xNqV0jTxwvCiKhzRVL59vfcBo84jaDj54wsr0yN2nGuZp9SLyuuRmWsLd_USLG2N7kM66dHOseTTg5l-NNSPYjqtbiZLIpk3KcX_J3KaF9FYgZ3VOIcKdPrsITBhLQ29ZsZ0gDNet5Dmw_n9gZHT-JqRQbZDgm7oSqko8gOdRjKa8MUmQpsibzCIIjM_nzbg5PjtC7DI5zCU1tRRjTSsACqL7lN1OLC0Iac7vwyPk_SmjCFTo7V5Fd2f-XVR02XyHlde=w2104-h1510-no"><br><br>Form Page</a></nav> 
+		</div><br>
+		<div id="second">
+		<nav class="project-tile"><a href="https://codepen.io/Mariel13/pen/qBdJdYb"><img class="projects-img" src="https://lh3.googleusercontent.com/hNINY2nlq8jFIKn7N97nRiAGjhcwCpGdIVpiwEEIBMj1w5aVbZiOaVsA9lVaDG7kTxBv6gDfW0x5DkuU4qBclPgpC1NaF5E-jjRlXDZO5ndWy1xm6dMTPipSbkLd_2GqrjPJiOM3-8mvzGP4fVIAZGQlDMVd2FNjGbTWSBWufCgmfReuw8aPaH03cQj10GARIii_mzav_168NGI2tPK2xdd_CvL_VASd0uGozC6e15JA1uriYG7GfAVec9G7zytdsYAGM9p-QCGiFgt6hVrn2Xl9upD63bRxi4nHdDidHvE1Df-R0F5gxD3drPag-Rzv4T0YMi3yb-PEGO7-V7WOLqYO7MDZhQoPbLkN5uw6tt6qFJWO0UXjuhUqrUeZEPxaOzRL10V9H4fH49mJo1MS8MecYtrgDMqVdB1DlGHy6yJFumxwQ7JcBoyw9RvX8R-M75c4ZmHzc21Us0fxVLPODiursPZV_pp0MXRxVGpLebNwX_TJL99bSw_E89TDELAqMTnlkMKGmybG6efXnT-XqmveOQ_bwFWO54QQlWc3TE4VGTkYsQAdU6ippsQoRIReWTcwd3n0pH4y6sp0nlYLV6q_NDAb47U6u-YCEzT4vJsbaCSz2NXpS0DCgAI-aU8y8f0aWO7nFaiWBUQtDLagpDSgqNgW_BEYOZ39-1wBwDR9SRoXQdCo_J1MCyff=w2290-h1486-no"><br><br>Product Landing Page</a></nav> 
+		<nav class="project-tile"><a href="https://codepen.io/Mariel13/pen/YzXOWxO"><img class="projects-img" src="https://lh3.googleusercontent.com/Y8nmhHhL6QXqUDjd3LDJyFyAeyJmtkeiKuMXvD-4KCi2orATXKQEnVqAAZqDqIktRdxbrhvlLxkEKndZbuNDAD67nsgvzHpNUW6a0H5boq9ePbQCBrb5bEYbVEiiGihl08NasIvp2_2AyyIA6ffP9IfFYUm0egaBrCIjzof_P7FF_3cdqk64JcfAxxy77GeriDBpnIC5SyzsB5LFYDEJst0aha8NLTMQj-yQPmVB3-X4glUUEw9uK1R0nVXIig_oo4sE-AtIsVPKRVPEm_Yu-dxrVOdQ_kpD2uNU7G054bypb5oqBMPNk7j_TU8ce_XleycdD_s-UNTfYDj7DTg85QBcnn6fi-MCGdda5w_1L_WH7BG7RDUSkGwr8FFMTMDOSyMGf57QqR-wOu_aUFy-OHMATtrhUvYEsdqMHMSIeFh-0Xyo4LQGMOm2X5zYv50Cm3vCAVwsNPPaoMpxryv8Ql46mPcuIFRWUaxRdeWPj2Olnpj2IuHM5N5acZiFBEyjAK4I4aKWlU24Rp1roDhVKwX1ymeZJVzBLfRxemGHPYgxgjV3ReOd1SxJP4JvrQSxwRNTuD0FMSePkFpfTgnQomidr-GrjlM9OdXfaXrwuTg4YVJ6wYo7HrvVC_BwvODjvCcXWBrV7VwcGKqWxNbChXYmscw5jY49-MINHbUS2yK_WSOsbw29DFQR3PQl=w2320-h1492-no"><br><br>Technical Documentation</a></nav> 
+	    </div>
+	</section>
+	</div><br>
+	<footer id="footer">
+	<section id="contact">
+	<br><br><br><br><h1 class="contact-h" style="color:white;padding-top:0%;margin-top:0%">Join me in this Coding Journey...</h1>
+	<h3> Follow me on my Social Medias or Contact me.</h3><br>
+	   <ul class="profile-linked">
+	    <li><a id="profile-link" class="profile-linked" target="_blank" href="https://www.freecodecamp.org/mariel13"><img class="img-linked" src="https://cdn1.iconfinder.com/data/icons/social-media-logos-7/64/github-512.png"> GitHub</a></li>
+	    <li><a class="profile-linked" target="_blank" href="https://www.freecodecamp.org/mariel13"><img class="img-linked" src="https://pngimage.net/wp-content/uploads/2018/06/logo-instagram-gris-png-2.png"> Instagram</a></li>
+	    <li><a class="profile-linked" target="_blank" href="https://www.freecodecamp.org/mariel13"><img class="img-linked" src="https://lh3.googleusercontent.com/proxy/8D4YeZRskIUJde6f9cVgf3VOXGKSm5rp0vOsqIv6ukZ73gfXjgw5kEk6_xzt2a303OgmILKnT2zCT49b8BlZNqw-yMy_KaHGNA0WQ6W-dOX-j35jxN9M1VdwSQ"> WhatsApp</a></li>
+	</ul>
+	</section>
+	<br><br><hr id="hr">
+	<h4>© Created by Marielle Seifi</h4>
+	</footer
+</body>
+</html>
+

@@ -1,0 +1,467 @@
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+nav{
+  background: linear-gradient(35deg, #0082e6, #2E8B57, #90EE90); 
+  height: 150px;
+  width: 100%;
+  border-bottom: 4px solid #4C9CF1;
+  text-align: center;
+  position: fixed;
+  z-index: 3;
+  opacity: 0.98;
+}
+.logo{
+  margin-top: 15px;
+  height: 70px;
+  width: auto;
+  text-align: center;
+  margin-bottom: -10px;
+  margin-left: -125px;
+}
+
+nav ul{
+  text-align: center;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 2px;
+  
+}
+nav ul li a{
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 0px 25px;
+  border-radius: 3px;
+  /* text-transform: uppercase; */
+  font-family: 'Abel', sans-serif;
+}
+a#active,a:hover{
+  border-bottom: 3px solid  white;
+  color: black;
+  transition: 0.8s;
+  font-size: 22px;
+  cursor: pointer;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+#img-sec{
+	   alignment-adjust: center;
+	   background-image: url("https://1v1d1e1lmiki1lgcvx32p49h8fe-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/virus-edm-corona-1-1-1.gif");
+	   background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+	   display: flex; 
+	   max-width: 100%;
+       height: 750px; 
+       margin: 0%; 
+       background-attachment: fixed;   
+}
+   
+@media (max-width: 1150px){
+  label.logo{
+    font-size: 24px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+ #info{
+	font-size: 20px;
+	margin: 40px 100px 40px 100px;
+	}
+}
+@media (max-width: 870px){
+  .checkbtn{
+    display: block;
+    margin-top: 20px;
+    margin-right: 40px;
+    
+  }
+  .logo{
+	height: 45px;
+	width: auto;
+	padding-left: 50px;
+	}
+ 
+  #meul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 5;
+    cursor: pointer;
+  }
+  nav{
+  	height: 80px;
+  }
+  nav #meul .lime{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;  
+  }
+  nav #meul .lime a{
+    font-size: 20px;
+  }
+  .linky:hover{
+    background: none;
+    color: #0082e6;
+    border-bottom: 3px solid  #0082e6;
+    padding: 3 180px;
+    transition: all 0.8s;   
+  }
+  
+  #check:checked ~ ul{
+    left: 0;
+    
+  }
+  #service {
+   display: block;
+  }
+}
+
+.products {
+    height: 500px;
+    display: flex;
+    align-items: center;
+	justify-content: space-around;
+    position: sticky;
+	text-align: center;
+  } 
+  
+@media only screen and (max-width: 1050px){
+	#txt1{
+	font-size: 40px;
+	}
+	#txt3{
+	font-size: 33px;
+	}
+	#txtp{
+	font-size: 28px;
+	}
+	#info{
+	font-size: 19px;
+	margin: 40px 100px 40px 100px;
+	}
+	
+}
+
+#box-1, #box-2, #box-3 {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(35deg, #add9e6, #F0FFF0); 
+    
+  } 
+  
+@media only screen and (max-width: 750px){
+	#txt1{
+	font-size: 35px;
+	}
+	#txt3{
+	font-size: 28px;
+	}
+	#txtp{
+	font-size: 23px;
+	}
+	#info{
+	font-size: 16px;
+	margin: 40px 100px 40px 100px;
+	}
+	.lista{
+	font-size: 25px;
+	}
+	 #box-1, #box-2, #box-3 {
+	 transform: scale(0.7);
+	 height: 200px;
+	 }
+	/*.products {
+	 display: inline-block;
+	 padding-left: 25%;
+      
+	 }*/
+	 
+}
+#mbt {
+padding-top: 30px;
+margin-top: 180px;
+  background-color: black;
+  text-align: center;
+  opacity: 0.8;
+  border-radius: 50px;
+  height: 520px;
+  width: 80%;
+  margin-left: 10%;
+  padding-left: 15px;
+  padding-right: 20px;
+  align-items: center;
+  position: relative; 
+}
+h1{
+    color:#90EE90;
+	font-family: 'Abel', sans-serif;
+	font-size: 45px;
+}
+p{
+	color: white;
+	font-family: 'Abel', sans-serif;
+	font-size: 35px;
+}
+h3{
+	font-family: 'Abel', sans-serif;
+	color:#90EE90;
+	font-size: 38px;
+}
+
+#content{
+  background: url("https://www.stathakis.com/hubfs/bigstock-Office-Disinfection-Coronavir-358410536.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+  
+h2{
+   font-family: 'Abel', sans-serif;
+	color: black;
+	font-size: 20px;
+	text-align: left;
+	margin: 60px 600px 0px 150px;
+}
+#info{
+ border: 2px gray;
+ border-style: dashed;
+ padding: 25px 25px;
+}
+ 
+  
+  .img-box {
+    width: 80%;
+    height: auto;
+    padding: 10%;
+    padding-top: 20%;
+    align-items: center;
+    
+  }
+  h5{
+    font-family: 'Abel', sans-serif;
+	font-size: 25px;
+  }
+ #box-1:hover, #box-2:hover, #box-3:hover {
+  	opacity: 0.8;
+  	transform: scale(0.9);
+  }
+  #service{
+  	display: flex;
+  	font-family: 'Abel', sans-serif;
+	font-size: 30px;
+	color: #0000CD;
+	font-weight: bold;
+	text-align: justify;
+	justify-content: space-around;
+	position: static;
+  }
+  #services{
+  alignment-adjust: center;
+   text-align: center;
+  background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/coronavirus-disinfection-royalty-free-image-1587312983.jpg");
+   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; 
+  max-width: 100%;
+  height: 800px; 
+  margin: 0%; 
+    
+  }
+  h4{
+  font-family: 'Abel', sans-serif;
+	font-size: 35px;
+	color: #191970;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: static;
+	}
+  #active{
+    margin-top: 100px;
+  	height: 200px;
+  	width: 200px;
+  	position: static;
+  }
+  #btnC{
+   font-family: 'Abel', sans-serif;
+	font-size: 35px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 30px;
+	border-radius: 20px;
+	background: linear-gradient(35deg, #add9e6, #F0FFF0); 
+	position: static;
+  }
+  #btnC:hover{
+   transform: scale(1.1);
+   font-size:  40px;
+   color: red;
+   font-weight: bold;
+   background: black;
+  }
+  footer{
+  background: linear-gradient(35deg, #0082e6, #90EE90, #2E8B57); 
+  height: 80px;
+  width: 100%;
+  border-top: 4px solid #4C9CF1;
+  text-align: center;
+  }
+  #rights {
+  font-family: 'Abel', sans-serif;
+	font-size: 20px;
+	padding-top: 20px;
+	color: black;
+  }
+   
+  .icons{
+  height: 30px;
+  width: 30px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: white;
+  border-width: thin; 
+  cursor: pointer;
+  }
+  #icon1:hover{
+   background-color: #3B5998;
+  }
+  #icon2:hover{
+   background: linear-gradient(35deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); 
+  }
+  #icon3:hover{
+   background: linear-gradient(35deg, #D44638, #B23121); 
+  }
+  
+</style>
+<!DOCTYPE html>
+<!-- Created By Marielle Romano -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Romano Disinfection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <a class="profile-linked" target="_blank" href="http://m.facebook.com/pages/category/cleaning-service/Romanodisinfectionservice-106942071025250/">
+      <img class="icons" id="icon1" src="https://www.vodafonecampuslab.es/plataforma/images/uploads/FB-blanco.png">
+      </a>
+      <a class="profile-linked" target="_blank" href="https://instagram.com/romanodisinfectionservice?igshid=1nqw8pp0ns00">
+      <img class="icons" id="icon2" src="https://tombartel.net/wp-content/uploads/2018/10/Instagram-white-icon.png">
+      </a>
+      <a class="profile-linked" target="_blank" href="mailto:romanosterilizeservice@gmail.com">
+      <img class="icons" id="icon3"src="https://images8.design-editor.com/94/9407706/3958%2F8E800BF6-E848-0B1C-9E7F-E06AE520CE0E.png">
+      </a>
+      <img class="logo" src="https://lh3.googleusercontent.com/bMQOdCR9QL3NdUlSAB6nN0fP7hcdM3ZymYFannU2P6M3o7kP2Y4E8ZX9lrmqCr3z6IH1_8S1DKMQcftHdma2KQ_waxvvnGeytc3bRdr6jU5bb0CjGloZbw-fcDxbd24mAHNAfT-RsY7hCr59-S_CatKD5wCefuYQX3y8lUHyBQ-DXDhRP1Sq19OFBu0YYv6SakycJZkr2amcn9l1Dz6sMYrtPaVSXn6VhEhHiKvcMVcI19-uO-6t5Y0reqnWZDL9Q2NeTKCE61hEzeaF1w3cLR9oejvzzFMZ15lN0eYGxoBEbmxXM-_q3pLq27yHX__89VOhWAMy9HlHCLq0PB-XpJJHeHzWV5bfUvuKKWvvuaqg1S7tuxfYppjcrVvwClBgKjRhYSHlh1nIWry7DKb8dZMy12ZErhUS6UnrGRCcXJc9Gb-x4xDZwd-rMzJl2-c-bojtskiBUR1zXlSjGAVoruzKnsC64aFX-SvtqlrQJk4vDNcqWO0jgbto5sDMaonBvTdKnIrwMsLX-7tz1wy9e9a3LT-KBqNTfEky0zXecXT25bK7boRF91dvcNweK7GbRtoSxzpYFQMJDdwMva_IxxVu8KxkhrZLW_dYX7jA6DqH8GMUx8AJ-xFleAmac7HqFEkkmw-9B-rKVoTVnCPFCtoTS6p9a_TCKjyAJKBMlaLYqZAjRWZDHBVP80uA=w509-h112-no?authuser=0"> 
+      <ul id="meul">
+<li class="lime"><a class="linky" target="_blank" href="file:///Users/marielle/Documents/Home.html#file:///Users/marielle/Documents/Home.html">HOME</a></li>
+<li class="lime"><a class="linky"  target="_blank" href="#services">SERVICES</a></li>
+<li class="lime"><a class="linky" target="_blank" href="file:///Users/marielle/Documents/index.html">CONTACT</a></li>
+</ul>
+</nav>
+    <section id="img-sec">
+    <div id="mbt">
+    <h1 id="txt1">WE KILL COVID-19</h1><br>
+    <p id="txtp">Romano Disinfection ℠ is a mobile residential and commercial disinfection company 
+    that specializes in safely removing 99.999% of viruses, bacteria, mold, allergens and odors, including coronaviruses. <br> <br>
+    Don't take chances when it comes to the health and safety of you, your family, or your employees.</p><br>
+    <h3 id="txt3">¡YOUR HEALTH IS OUR PRIORITY!</h3>
+    </div>
+    </section>
+    
+    <section id="content">
+   
+   
+    <div>
+    <h2 id="info">COVID-19 CORONAVIRUS DISINFECTION IN METHUEN, MA <br>
+     At Romano Disinfection ℠, your safety is our top priority.
+   We use a CDC-approved, EPA-certified, environmentally friendly, non-toxic, water soluble, hospital solution.
+  Our products have been rigorously tested and scientifically proven to disinfect 99.999% of viruses, bacteria,
+   mold, allergens and odors, including coronavirus.</h2>
+    </div>
+   
+    <div class="products" id="product">
+		<div id="box-1">
+		   <img class="img-box" src="https://www.detrapel.com/wp-content/uploads/2020/03/corona_icon-600x600.png"><br><br>
+		   
+		</div>
+  		<div id="box-2">
+  			<img class="img-box" src="https://webstockreview.net/images/clipart-shield-protection-shield-8.png"><br><br>
+  			
+  		</div>
+  		<div id="box-3">
+  		  <img class="img-box" src="https://www.pcmgrupo.com/images/sello-decoracin-ecofriendly.png"><br><br>
+  		  
+  		</div> 
+	</div>
+	</section>
+	
+	<section id="services">
+	<div><h4>SERVICES</h4></div><hr><br><br>
+	<div id="service">
+	<ul>
+	<li class="lista">&#x2713; Airports</li>
+	<li class="lista">&#x2713; Trains</li>
+	<li class="lista">&#x2713; Residential Homes</li>
+	<li class="lista">&#x2713; Complex Building</li>
+	<li class="lista">&#x2713; Hospital</li>
+	<li class="lista">&#x2713; Restaurants</li></ul>
+	<ul>
+	<li class="lista">&#x2713; Hotels</li>
+	<li class="lista">&#x2713; Schools</li>
+	<li class="lista">&#x2713; Gymnasiums</li>
+	<li class="lista">&#x2713; Any Type Offices</li>
+	<li class="lista">&#x2713;Transportations</li>
+	<li class="lista">&#x2713; Public Areas</li>
+	</ul>
+	</div><br>
+	<img id="active" src="https://sc01.alicdn.com/kf/UTB8wGervFfFXKJk43Ot760IPFXa8/137930076/UTB8wGervFfFXKJk43Ot760IPFXa8.png"><br><br>
+	<a id="btnC" target="_blank" href="file:///Users/marielle/Documents/index.html">CONTACT US</a>
+	</section>
+    <footer>
+    <p id="rights">Copyright 2020 © Romano Disinfection Service - All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
